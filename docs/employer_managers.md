@@ -31,11 +31,11 @@
             "available_permissions": [
                 {
                     "id": "can_create_vacancy",
-                    "name": "Может создавать вакансии"
+                    "name": "Создание и продление вакансий"
                 },
                 {
                     "id": "can_view_resume_contacts",
-                    "name": "Может просматривать резюме"
+                    "name": "Просмотр контактов соискателей"
                 }
             ]
         }
@@ -55,7 +55,7 @@
 
  Имя | Тип | Описание
  --- | --- | ---
- id | число | идентификатор права
+ id | строка | идентификатор права
  name | строка | название права
  
 ### Ошибки
@@ -98,13 +98,13 @@
          "comment": "личный"
     },
     "permissions": [
-        {
-            "id": 1
-        }, 
-        {
-            "id": 3
-        }
-    ]
+       {
+           "id": "can_create_vacancy"
+       },
+       {
+           "id": "can_view_resume_contacts"
+       }
+   ]
 }
 ```
 
@@ -134,7 +134,7 @@
  
  Имя | Тип | Описание
  --- | --- | ---
- id | число | идентификатор права
+ id | строка | идентификатор права
  name | строка | название права
  
  Все поля, кроме комментария к телефону и прав, являются обязательными
@@ -192,15 +192,15 @@
          "comment": "личный"
     },
     "permissions": [
-        {
-            "id": 1,
-            "name": "can_create_vacancy"
-        }, 
-        {
-            "id": 3, 
-            "name": "can_view_statistics"
-        }
-    ]
+       {
+           "id": "can_create_vacancy",
+           "name": "Создание и продление вакансий"
+       },
+       {
+           "id": "can_view_resume_contacts",
+           "name": "Просмотр контактов соискателей"
+       }
+   ]
 }
 ```
 
@@ -294,15 +294,15 @@
                 "comment": "личный"
             },
             "position": "Менеджер",
-            "permissions": [
-                {
-                    "id": 1,
-                    "name": "can_create_vacancy"
-                }, 
-                {
-                    "id": 3, 
-                    "name": "can_view_statistics"
-                }
+        "permissions": [
+               {
+                   "id": "can_create_vacancy",
+                   "name": "Создание и продление вакансий"
+               },
+               {
+                   "id": "can_view_resume_contacts",
+                   "name": "Просмотр контактов соискателей"
+               }
             ],
             "area": {
                 "id": "1",
@@ -373,14 +373,14 @@
     },
     "position": "Менеджер",
     "permissions": [
-        {
-            "id": 1,
-            "name": "can_create_vacancy"
-        }, 
-        {
-            "id": 3, 
-            "name": "can_view_statistics"
-        }
+       {
+           "id": "can_create_vacancy",
+           "name": "Создание и продление вакансий"
+       },
+       {
+           "id": "can_view_resume_contacts",
+           "name": "Просмотр контактов соискателей"
+       }
     ],
     "area": {
         "id": "1",
