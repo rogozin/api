@@ -85,12 +85,34 @@
                 {
                     "name": "Замоскворецкая",
                     "url": "https://api.hh.ru/vacancies?clusters=true&metro=2&area=1",
-                    "count": 11639
+                    "count": 11639,
+                    "type": "metro_line",
+                    "metro_line": {
+                        "id": "2",
+                        "hex_color": "4FB04F",
+                        "area": {
+                            "id": "1",
+                            "name": "Москва"
+                        }
+                    }
                 },
                 {
-                    "name": "Люблинско-Дмитровская",
-                    "url": "https://api.hh.ru/vacancies?clusters=true&metro=10&area=1",
-                    "count": 4197
+                    "name": "Алексеевская",
+                    "url": "https://api.hh.ru/vacancies?clusters=true&metro=6.8&area=1",
+                    "count": 1046,
+                    "type": "metro_station",
+                    "metro_station": {
+                        "id": "6.8",
+                        "hex_color": "4FB04F",
+                        "lat": 55.807794,
+                        "lng": 37.638699,
+                        "order": 5,
+                        "area": {
+                            "id": "1",
+                            "name": "Москва",
+                            "url": "https://api.hh.ru/areas/123"
+                        }
+                    }
                 }
             ]
         },
@@ -227,3 +249,33 @@ items | array | Массив поисковых запросов в данном
 name | string | Название элемента кластера
 url | string | Ссылка на поисковую выдачу по данному элементу кластера
 count | number | Количество вакансий в данном элементе кластера
+type | string или отсутствует | тип значения, связанного с группой
+
+### Типы кластеров
+
+Доступные в данный момент типы:
+
+* `metro_line` - линия метро
+* `metro_station` - станция метро
+
+
+Для линий метро (`type=metro_line`) дополнительно выдаётся ключ `metro_line`
+содержащий объект с полями:
+
+Имя | Тип | Значение
+--- | --- | ---
+id | string | идентификатор линии
+hex_color | string | цвет линии в HEX формате RRGGBB (от 000000 до FFFFFF)
+area | object | [Регион](areas.md) (город) в котором находится линия
+
+
+Для станций метро (`type=metro_station`) дополнительно выдаётся ключ
+`metro_station` содержащий объект с полями:
+
+Имя | Тип | Значение
+--- | --- | ---
+id | string | идентификатор станции
+hex_color | string | цвет линии в HEX формате RRGGBB (от 000000 до FFFFFF)
+lat, lng | number | координаты расположения станции (широта и долгота)
+order | number | порядок станции в линии метро
+area | object | [Регион](areas.md) в котором находится станция
