@@ -221,6 +221,22 @@
                     "count": 512
                 }
             ]
+        },
+        {
+            "id": "sub_industry",
+            "name": "Сфера компании",
+            "items": [
+                {
+                    "name": "Системная интеграция, автоматизации технологических и бизнес-процессов предприятия, ИТ-консалтинг",
+                    "url": "https://api.hh.ru/vacancies?clusters=true&industry=7.539",
+                    "count": 24237
+                },
+                {
+                    "name": "Разработка программного обеспечения",
+                    "url": "https://api.hh.ru/vacancies?clusters=true&industry=7.540",
+                    "count": 22859
+                }
+            ]
         }
     ]
 }
