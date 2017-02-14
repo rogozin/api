@@ -119,7 +119,10 @@
             "value": "51.675",
             "name": "Энергосбережение",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
-            "cluster_group": null
+            "cluster_group": {
+                "id": "sub_industry",
+                "name": "Сфера компании"
+            }
         },
         {
             "argument": "label",
@@ -203,7 +206,7 @@
         {
             "argument": "order_by",
             "value": "salary_desc",
-            "name": null,
+            "name": "По убыванию зарплат",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
@@ -218,6 +221,13 @@
             "argument": "sort_point_lng",
             "value": "37.86",
             "name": null,
+            "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
+            "cluster_group": null
+        },
+        {
+            "argument": "period",
+            "value": "7",
+            "name": "За неделю",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
