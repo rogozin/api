@@ -29,7 +29,7 @@ GET /resumes/{resume_id}/{list_type}
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#etc))
+* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
 
 Поддерживаются [стандартные параметры пагинации](/docs/general.md#pagination) `page` и `per_page`
 (`per_page` <= 100). 
@@ -86,7 +86,7 @@ POST /resumes/{resume_id}/{list_type}
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#etc))
+* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
 
 В теле запроса нужно передать json вида:
 
@@ -143,7 +143,7 @@ DELETE /resumes/{resume_id}/{list_type}/employer?id={employer_id}
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#etc))
+* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
 * `id` — идентификатор работодателя (множественный параметр)
 
 Пример удаления нескольких работодателей:
@@ -177,7 +177,7 @@ DELETE /resumes/{resume_id}/{list_type}
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#etc))
+* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
 
 
 ### Успешный ответ
