@@ -204,3 +204,15 @@ HTTP code | type | value | описание
 403 | vacancies | prolongation_forbidden | продление вакансий недоступно текущему менеджеру
 403 | vacancies | unavailable_for_archived | продление недоступно для архивной вакансии
 403 | vacancies | too_early | продление раньше времени
+
+
+<a name="resume-visibility-lists"></a>
+### Списки видимости резюме
+
+<a name="resume-visibility-lists-add"></a>
+#### Добавление компаний в список
+
+HTTP code | type | value | описание
+----------|------|-------|---------
+400 | unknown_employer | — | передан неизвестный идентификатор работодателя
+400 | limit_exceeded | — | превышен лимит списка видимости
