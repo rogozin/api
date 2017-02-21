@@ -15,7 +15,6 @@
 * `relocation_type` - готовность к переезду
 * `travel_time` - время в пути
 * `resume_access_type` - уровень доступа к резюме
-* `resume_visibility_list_type` - типы списков видимости резюме
 * `business_trip_readiness` - готовность к командировкам
 * `resume_contacts_site_type` - тип сайта в поле «контакты»
 * `resume_status` - статус резюме

@@ -23,13 +23,13 @@
 <a name="get"></a>
 ## Получение списков видимости
 
-``` 
+```
 GET /resumes/{resume_id}/{list_type}
 ```
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
+* `list_type` — тип списка (`whitelist` или `blacklist`)
 
 Поддерживаются [стандартные параметры пагинации](/docs/general.md#pagination) `page` и `per_page`
 (`per_page` не может превышать 100).
@@ -73,7 +73,8 @@ items[].alternate_url | string | Ссылка на описание работо
 
 ### Ошибки
 
-* `404 Not Found` – резюме с указанным идентификатором не найдено. 
+* `404 Not Found` – резюме с указанным идентификатором не найдено или недоступно текущему пользователю.
+* `404 Not Found` – передан неизвестный `list_type`.
 
 
 
@@ -86,7 +87,7 @@ POST /resumes/{resume_id}/{list_type}
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
+* `list_type` — тип списка (`whitelist` или `blacklist`)
 
 В теле запроса нужно передать json вида:
 
@@ -129,6 +130,7 @@ Location: /resumes/{resume_id}/{list_type}
 * `400 Bad Request` — передан пустой список компаний.
 * `400 Bad Request` — передан невалидный JSON или JSON неправильного формата.
 * `404 Not Found` — резюме с указанным идентификатором не найдено или недоступно текущему пользователю.
+* `404 Not Found` – передан неизвестный `list_type`.
 * [Дополнительные ошибки с описанием причины](/docs/errors.md#resume-visibility-lists-add).
 
 При возникновении любой ошибки ни одна компания не добавляется в список (независимо от типа ошибки).
@@ -144,7 +146,7 @@ DELETE /resumes/{resume_id}/{list_type}/employer?id={employer_id}
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
+* `list_type` — тип списка (`whitelist` или `blacklist`)
 * `id` — идентификатор работодателя (множественный параметр)
 
 Пример удаления нескольких работодателей:
@@ -167,6 +169,7 @@ DELETE /resumes/{resume_id}/{list_type}/employer?id=405&id=406&id=407
 ### Ошибки
 
 * `404 Not Found` — резюме с указанным идентификатором не найдено или недоступно текущему пользователю.
+* `404 Not Found` – передан неизвестный `list_type`.
 
 
 
@@ -179,7 +182,7 @@ DELETE /resumes/{resume_id}/{list_type}
 
 где:
 * `resume_id` — идентификатор резюме
-* `list_type` — тип списка (можно узнать в [справочнике resume_visibility_list_type](/docs/dictionaries.md#resume))
+* `list_type` — тип списка (`whitelist` или `blacklist`)
 
 
 ### Успешный ответ
@@ -190,3 +193,4 @@ DELETE /resumes/{resume_id}/{list_type}
 ### Ошибки
 
 * `404 Not Found` — резюме с указанным идентификатором не найдено или недоступно текущему пользователю.
+* `404 Not Found` – передан неизвестный `list_type`.
