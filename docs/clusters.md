@@ -92,7 +92,8 @@
                         "hex_color": "4FB04F",
                         "area": {
                             "id": "1",
-                            "name": "Москва"
+                            "name": "Москва",
+                            "url": "https://api.hh.ru/areas/1"
                         }
                     }
                 },
@@ -110,7 +111,7 @@
                         "area": {
                             "id": "1",
                             "name": "Москва",
-                            "url": "https://api.hh.ru/areas/123"
+                            "url": "https://api.hh.ru/areas/1"
                         }
                     }
                 }

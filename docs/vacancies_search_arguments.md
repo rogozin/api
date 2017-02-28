@@ -232,32 +232,32 @@
             "cluster_group": null
         },
         {
-            "id": "per_page",
-            "name": null,
+            "argument": "per_page",
             "value": "10",
+            "name": null,
             "disable_url": "https://api.hh.ru/vacancies?page=0&area=1&area=2...",
-            "cluster": null
+            "cluster_group": null
         },
         {
-            "id": "page",
-            "name": null,
+            "argument": "page",
             "value": "0",
+            "name": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&area=1&area=2&...",
-            "cluster": null
+            "cluster_group": null
         },
         {
-            "id": "clusters",
-            "name": null,
+            "argument": "clusters",
             "value": "true",
+            "name": null,
             "disable_url": "https://api.hh.ru/vacancies?page=0&area=1&area=2...",
-            "cluster": null
+            "cluster_group": null
         },
         {
-            "id": "describe_arguments",
-            "name": null,
+            "argument": "describe_arguments",
             "value": "true",
+            "name": null,
             "disable_url": "https://api.hh.ru/vacancies?page=0&area=1&area=2...",
-            "cluster": null
+            "cluster_group": null
         }
     ]
 }
