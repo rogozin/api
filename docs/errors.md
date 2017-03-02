@@ -214,5 +214,5 @@ HTTP code | type | value | описание
 
 HTTP code | type | value | описание
 ----------|------|-------|---------
-400 | unknown_employer | — | передан неизвестный идентификатор работодателя
-400 | limit_exceeded | — | превышен лимит списка видимости
+400 | resume_visibility_list | unknown_employer | передан неизвестный идентификатор работодателя
+400 | resume_visibility_list | limit_exceeded | превышен лимит списка видимости
