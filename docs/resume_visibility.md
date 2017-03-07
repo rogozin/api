@@ -172,6 +172,7 @@ DELETE /resumes/{resume_id}/{list_type}/employer?id=405&id=406&id=407
 
 * `404 Not Found` — резюме с указанным идентификатором не найдено или недоступно текущему пользователю.
 * `404 Not Found` – передан неизвестный `list_type`.
+* [Дополнительные ошибки с описанием причины](/docs/errors.md#resume-visibility-lists-remove).
 
 
 

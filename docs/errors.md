@@ -217,3 +217,11 @@ HTTP code | type | value | описание
 400 | resume_visibility_list | unknown_employer | передан неизвестный идентификатор работодателя
 400 | resume_visibility_list | limit_exceeded | превышен лимит списка видимости
 400 | resume_visibility_list | too_many_employers | передано слишком много работодателей
+
+<a name="resume-visibility-lists-remove"></a>
+#### Удаление компаний из списка
+
+HTTP code | type | value | описание
+----------|------|-------|---------
+400 | bad_argument | id | передан невалидный идентификатор работодателя
+400 | resume_visibility_list | too_many_employers | передано слишком много работодателей
