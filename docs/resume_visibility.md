@@ -46,7 +46,6 @@ GET /resumes/{resume_id}/{list_type}
     "pages": 1,
     "per_page": 20,
     "limit": 2000,
-    "can_add": 1989,
     "items": [
         {
             "id": "1455",
@@ -66,7 +65,6 @@ GET /resumes/{resume_id}/{list_type}
 Имя | Тип | Описание
 ----|-----|---------
 limit | number | Максимальное количество элементов в списке.
-can_add | number | Количество элементов, которые можно добавить в список.
 items | array | Список компаний.
 items[].id | string | Идентификатор работодателя.
 items[].name | string | Название работодателя.
