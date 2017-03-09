@@ -52,7 +52,10 @@ GET /resumes/{resume_id}/{list_type}
             "id": "1455",
             "name": "HeadHunter",
             "url": "https://api.hh.ru/employers/1455",
-            "alternate_url": "https://hh.ru/employer/1455"
+            "alternate_url": "https://hh.ru/employer/1455",
+            "logo_urls": {
+                "90": "https://hh.ru/employer/logo/1455"
+            }
         }
     ]
 }
@@ -69,12 +72,14 @@ items[].id | string | Идентификатор работодателя.
 items[].name | string | Название работодателя.
 items[].url | string | Ссылка на детальное описание работодателя.
 items[].alternate_url | string | Ссылка на описание работодателя на сайте.
+items[].logo_urls.90 | string | Изображение логотипа работодателя. Клиент должен предусмотреть вероятность отсутствия ресурса по указанной ссылке
 
 
 ### Ошибки
 
 * `404 Not Found` – резюме с указанным идентификатором не найдено или недоступно текущему пользователю.
 * `404 Not Found` – передан неизвестный `list_type`.
+* [Дополнительные ошибки с описанием причины](/docs/errors.md#resume-visibility-lists-get).
 
 
 

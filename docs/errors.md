@@ -209,6 +209,13 @@ HTTP code | type | value | описание
 <a name="resume-visibility-lists"></a>
 ### Списки видимости резюме
 
+<a name="resume-visibility-lists-get"></a>
+#### Получение списков видимости
+
+HTTP code | type | value | описание
+----------|------|-------|---------
+400 | bad_argument | per_page | передано невалидное количество элементов на странице (максимум 100)
+
 <a name="resume-visibility-lists-add"></a>
 #### Добавление компаний в список
 
