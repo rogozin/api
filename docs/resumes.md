@@ -1337,6 +1337,62 @@ max_date | строка с датой | Верхняя граница диапа
 }
 ```
 
+
+<a name="get_visibility_lists"></a>
+### Получение списка типов видимости резюме
+
+```
+GET /resumes/{resume_id}/access_types
+```
+
+где:
+* `resume_id` — идентификатор резюме
+
+Успешный ответ приходит с кодом `200 OK` и содержит тело:
+
+```
+{
+    "access_types": [
+        {
+            "id": "everyone"
+        },
+        {
+            "id": "no_one"
+        },
+        {
+            "id": "clients"
+        },
+        {
+            "id": "whitelist",
+            "total": 3,
+            "limit": 2000
+        },
+        {
+            "id": "blacklist",
+            "total": 5,
+            "limit": 2000,
+            "active": true
+        },
+        {
+            "id": "direct"
+        }
+    ]
+}
+```
+
+Имя | Тип | Описание
+----|-----|---------
+access_types | array | Доступные типы видимости резюме.
+access_types[].id | string | Идентификатор типа видимости.
+access_types[].active | boolean | Выбран ли тип видимости.
+access_types[].total | number | Количество компаний, добавленных в соответствующий список видимости (только для типов `blacklist` и `whitelist`).
+access_types[].limit | number | Максимальное количество компаний в списке видимости (только для типов `blacklist` и `whitelist`).
+
+Возможные ошибки:
+
+* `404 Not Found` - резюме с указанным идентификатором не найдено или недоступно текущему пользователю.
+
+
 См. также [управление списками видимости резюме](/docs/resume_visibility.md).
 
 
