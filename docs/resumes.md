@@ -17,6 +17,8 @@
 * [Сокращенное представление резюме](#resume-short)
 * [Статусы резюме](#status)
 * [Видимость резюме](#access_type)
+  * [Списки видимости резюме](#visibility_lists)
+  * [Получение списка типов видимости резюме](#get_access_types)
 * [История просмотра резюме](#views)
 * [Поиск по вакансиям, похожим на резюме](#similar)
 
@@ -1338,7 +1340,7 @@ max_date | строка с датой | Верхняя граница диапа
 ```
 
 
-<a name="get_visibility_lists"></a>
+<a name="get_access_types"></a>
 ### Получение списка типов видимости резюме
 
 ```
@@ -1354,27 +1356,33 @@ GET /resumes/{resume_id}/access_types
 {
     "access_types": [
         {
-            "id": "everyone"
+            "id": "everyone",
+            "name":"видно всему интернету"
         },
         {
-            "id": "no_one"
+            "id": "no_one",
+            "name":"не видно никому"
         },
         {
-            "id": "clients"
+            "id": "clients",
+            "name":"видно всем компаниям, зарегистрированным на HeadHunter"
         },
         {
             "id": "whitelist",
+            "name":"видно выбранным компаниям",
             "total": 3,
             "limit": 2000
         },
         {
             "id": "blacklist",
+            "name":"скрыто от выбранных компаний",
             "total": 5,
             "limit": 2000,
             "active": true
         },
         {
-            "id": "direct"
+            "id": "direct",
+            "name":"доступно только по прямой ссылке"
         }
     ]
 }
@@ -1384,6 +1392,7 @@ GET /resumes/{resume_id}/access_types
 ----|-----|---------
 access_types | array | Доступные типы видимости резюме.
 access_types[].id | string | Идентификатор типа видимости.
+access_types[].name | string | Имя типа видимости.
 access_types[].active | boolean | Выбран ли тип видимости.
 access_types[].total | number | Количество компаний, добавленных в соответствующий список видимости (только для типов `blacklist` и `whitelist`).
 access_types[].limit | number | Максимальное количество компаний в списке видимости (только для типов `blacklist` и `whitelist`).
