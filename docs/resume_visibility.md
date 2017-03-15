@@ -232,7 +232,6 @@ GET /resumes/{resume_id}/{list_type}/search?text={text}
     "page": 0,
     "pages": 1,
     "per_page": 20,
-    "limit": 2000,
     "items": [
         {
             "id": "1455",
@@ -262,7 +261,6 @@ GET /resumes/{resume_id}/{list_type}/search?text={text}
 
 Имя | Тип | Описание
 ----|-----|---------
-limit | number | Максимальное количество элементов в списке.
 items | array | Список компаний.
 items[].id | string | Идентификатор работодателя.
 items[].name | string | Название работодателя.
