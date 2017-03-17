@@ -13,7 +13,7 @@
         {
             "argument": "area",
             "value": "1",
-            "name": "Москва",
+            "value_description": "Москва",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "area",
@@ -23,7 +23,7 @@
         {
             "argument": "area",
             "value": "2",
-            "name": "Санкт-Петербург",
+            "value_description": "Санкт-Петербург",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=1&...",
             "cluster_group": {
                 "id": "area",
@@ -33,21 +33,21 @@
         {
             "argument": "text",
             "value": "менеджер по продажам",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "search_field",
             "value": "name",
-            "name": "в названии вакансии",
+            "value_description": "в названии вакансии",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "experience",
             "value": "between3And6",
-            "name": "От 3 до 6 лет",
+            "value_description": "От 3 до 6 лет",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "experience",
@@ -57,7 +57,7 @@
         {
             "argument": "employment",
             "value": "full",
-            "name": "Полная занятость",
+            "value_description": "Полная занятость",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "employment",
@@ -67,7 +67,7 @@
         {
             "argument": "schedule",
             "value": "fullDay",
-            "name": "Полный день",
+            "value_description": "Полный день",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "schedule",
@@ -77,7 +77,7 @@
         {
             "argument": "metro",
             "value": "2.133",
-            "name": "Сокол",
+            "value_description": "Сокол",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&metro=2&...",
             "cluster_group": {
                 "id": "metro",
@@ -87,7 +87,7 @@
         {
             "argument": "specialization",
             "value": "24",
-            "name": "Спорт, фитнес",
+            "value_description": "Спорт, фитнес",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "professional_area",
@@ -97,7 +97,7 @@
         {
             "argument": "specialization",
             "value": "24.624",
-            "name": "Ногтевой сервис",
+            "value_description": "Ногтевой сервис",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&specialization=24&...",
             "cluster_group": {
                 "id": "specialization",
@@ -107,7 +107,7 @@
         {
             "argument": "industry",
             "value": "51",
-            "name": "ЖКХ",
+            "value_description": "ЖКХ",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "industry",
@@ -117,7 +117,7 @@
         {
             "argument": "industry",
             "value": "51.675",
-            "name": "Энергосбережение",
+            "value_description": "Энергосбережение",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "sub_industry",
@@ -127,7 +127,7 @@
         {
             "argument": "label",
             "value": "not_from_agency",
-            "name": "Без вакансий агентств",
+            "value_description": "Без вакансий агентств",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "label",
@@ -137,14 +137,14 @@
         {
             "argument": "currency",
             "value": "USD",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "only_with_salary",
             "value": "true",
-            "name": "Указана зарплата",
+            "value_description": "Указана зарплата",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "salary",
@@ -154,7 +154,7 @@
         {
             "argument": "salary",
             "value": "1500",
-            "name": "от 1500 USD",
+            "value_description": "от 1500 USD",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": {
                 "id": "salary",
@@ -164,99 +164,85 @@
         {
             "argument": "bottom_lat",
             "value": "55.58",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "left_lng",
             "value": "37.52",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "top_lat",
             "value": "55.74",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "right_lng",
             "value": "37.86",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "date_from",
             "value": "2017-02-01",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "date_to",
             "value": "2017-02-10",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "order_by",
             "value": "salary_desc",
-            "name": "По убыванию зарплат",
+            "value_description": "По убыванию зарплат",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "sort_point_lat",
             "value": "55.74",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "sort_point_lng",
             "value": "37.86",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "period",
             "value": "7",
-            "name": "За неделю",
+            "value_description": "За неделю",
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&page=0&area=2&...",
             "cluster_group": null
         },
         {
             "argument": "per_page",
             "value": "10",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?page=0&area=1&area=2...",
             "cluster_group": null
         },
         {
             "argument": "page",
             "value": "0",
-            "name": null,
+            "value_description": null,
             "disable_url": "https://api.hh.ru/vacancies?per_page=10&area=1&area=2&...",
-            "cluster_group": null
-        },
-        {
-            "argument": "clusters",
-            "value": "true",
-            "name": null,
-            "disable_url": "https://api.hh.ru/vacancies?page=0&area=1&area=2...",
-            "cluster_group": null
-        },
-        {
-            "argument": "describe_arguments",
-            "value": "true",
-            "name": null,
-            "disable_url": "https://api.hh.ru/vacancies?page=0&area=1&area=2...",
             "cluster_group": null
         }
     ]
