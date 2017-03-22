@@ -321,24 +321,65 @@ will have `false` value.
         }
     },
     "can_view_full_info": true,
-    "_progress": {
+    "progress": {
         "percentage": 42,
+        "ready_to_publish": false,
+        "publish_url": "https://api.hh.ru/resumes/90b3e94cff035e3d0f0039ed1f58527a645463/publish", 
         "mandatory": [
-            "citizenship",
-            "language",
-            "area",
-            "skills",
-            "contact",
-            "education",
-            "specialization"
+            {
+                "id": "citizenship",
+                "name": "Citizenship"
+            },
+            {
+                "id": "language",
+                "name": "Languages"
+            },
+            {
+                "id": "area",
+                "name": "Area"
+            },
+            {
+                "id": "skills",
+                "name": "Skills"
+            },
+            {
+                "id": "contact",
+                "name": "Contacts"
+            },
+            {
+                "id": "education",
+                "name": "Education"
+            },
+            {
+                "id": "specialization",
+                "name": "Specialization"
+            }
         ],
         "recommended": [
-            "salary",
-            "middle_name",
-            "work_ticket",
-            "site",
-            "recommendation",
-            "birth_date"
+            {
+                "id": "salary",
+                "name": "Salary"
+            },
+            {
+                "id": "middle_name",
+                "name": "Middle name"
+            },
+            {
+                "id": "work_ticket",
+                "name": "Work ticket"
+            },
+            {
+                "id": "site",
+                "name": "Site"
+            },
+            {
+                "id": "recommendation",
+                "name": "Recommendation"
+            },
+            {
+                "id": "birth_date",
+                "name": "Birth date"
+            }
         ]
     }
 }
