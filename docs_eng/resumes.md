@@ -5,6 +5,7 @@
 * [Paid services related to CVs](#paid-services)
 * [CV creation & editing](#create_edit)
 * [CV publication & prolongation](#publish)
+* [CV status & readiness for publication](#status-and-publication)
 * [CV cloning](#clone)
 * [CV fields conditions for editing](#conditions)
 * [CV fields conditions for creating](#init-conditions)
@@ -415,6 +416,15 @@ powered by
 Documentation translation for this section is in progress.
 See
 [machine translation](https://z5h64q92x9.net/proxy_u/ru-en.en/http/hhru.github.io/api/rendered-docs/docs/resumes.md.html#publish)
+powered by
+[Yandex.Translate](https://translate.yandex.com/translate).
+
+
+<a name="status-and-publication"></a>
+## CV status & readiness for publication
+Documentation translation for this section is in progress.
+See
+[machine translation](https://z5h64q92x9.net/proxy_u/ru-en.en/http/hhru.github.io/api/rendered-docs/docs/resumes.md.html#status-and-publication)
 powered by
 [Yandex.Translate](https://translate.yandex.com/translate).
 
