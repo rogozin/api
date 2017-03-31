@@ -323,7 +323,7 @@ will have `false` value.
     },
     "can_view_full_info": true,
     "can_publish_or_update": false,
-    "publish_url": "https://api.hh.ru/resumes/90b3e94cff035e3d0f0039ed1f58527a645463/publish", 
+    "publish_url": "https://api.hh.ru/resumes/12345678901234567890123456789012abcdef/publish", 
     "progress": {
         "percentage": 42,
         "mandatory": [
