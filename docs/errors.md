@@ -216,5 +216,5 @@ HTTP code | type | value | reason | описание
 ----------|------|-------|--------|---------
 400 | managers | *field_name* | | ошибка в поле *field_name*
 403 | managers | email | already_exist | менеджер с такой почтой уже существует
-403 | managers |  | creation limit exceeded | достигнут лимит на создание менеджеров
+403 | managers |  | creation_limit_exceeded | достигнут лимит на создание менеджеров
 403 | managers | *field_name* | not_editable | поле *field_name* недоступно для редактирования

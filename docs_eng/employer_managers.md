@@ -55,8 +55,8 @@ Each element from `items` has the following fields:
  last_name | string | Manager's last name
  first_name | string | Manager's first name
  middle_name | string or null | Manager's middle name
- position | string | должность менеджера
- area.id | number | posting region from the [directory](areas.md)
+ position | string | Manager's position
+ area.id | number | Manager's region from the [directory](areas.md)
  phone | object or null | Manager's phone number
  additional_phone | object or null | Manager's additional phone number
 
